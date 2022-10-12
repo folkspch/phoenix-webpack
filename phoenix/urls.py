@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 from django.views.generic import TemplateView
 
+
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="_base.html")),
     path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name='_base.html'),
+         name='index'
+         ),
+    path('authen/',include('phoenix.authen_app.urls')),
+    path('user/',include('phoenix.user_app.urls')),
+    path('dashboard/',include('phoenix.dashboard_app.urls')),
+    path('loan/',include('phoenix.loan_app.urls')),
 ]

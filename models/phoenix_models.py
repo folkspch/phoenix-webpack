@@ -1,15 +1,12 @@
 from django.db import models
 
-# Create your models here.
-
 class Staff(models.Model):
     id = models.AutoField(primary_key=True)
-    uuid = models.UUIDField(max_length=128)
+    uid = models.CharField(max_length=64, unique=True)
     first_name = models.CharField(max_length=32)
     last_name = models.CharField(max_length=32)
     email = models.CharField(max_length=64)
     mobile_phone = models.CharField(max_length=16)
-    username = models.CharField(max_length=128)
     password = models.CharField(max_length=128)
     national_id = models.CharField(max_length=16, null=True, blank=True, default=None)
     dob = models.DateField(null=True, blank=True, default=None)

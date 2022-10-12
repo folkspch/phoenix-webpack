@@ -40,6 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    #Phoenix app
+    
+    'phoenix.authen_app',
+    'phoenix.user_app',
+    'phoenix.dashboard_app',
+    'phoenix.loan_app',
+    
+    #3rd party
+    
     'webpack_boilerplate',
 ]
 
@@ -113,7 +122,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
