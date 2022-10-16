@@ -1,0 +1,65 @@
+{% extends 'authen_base.html' %} 
+{% load webpack_loader static %}
+{% load icon %} 
+{% block title %}Login Page{% endblock title %} 
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/global.css' %}" />
+{% endblock css %} {% block loginspace %}
+
+<div class="flex flex-col align-items-center justify-items-center w-full p-5">
+  <div class="text-center text-primary text-xl">Sign In for NTF staffs</div>
+  <form class="mt-4" action="index.html">
+    <div class="flex flex-col mb-4 w-full">
+      <label for="username" class="text-xs tracking-wide text-gray-600 mb-3"
+        >Username</label
+      >
+      <div class="relative">
+        <div class="absolute p-4 text-gray500">{% icon "users" %}</div>
+        <input
+          id="username"
+          type="username"
+          name="username"
+          class="form-control p-4 pl-14 w-full border-0 rounded"
+          placeholder="Enter Username"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col mb-5 w-full">
+      <label for="password" class="text-xs tracking-wide text-gray-600 mb-3"
+        >Password</label
+      >
+      <div class="relative">
+        <div class="absolute p-4 text-gray500">{% icon "lock" %}</div>
+        <input
+          id="password-input"
+          type="password"
+          name="password"
+          class="form-control p-4 pl-14 w-full border-0 rounded"
+          placeholder="Enter Password"
+        />
+        <button
+          class="absolute p-4 right-0 text-gray500"
+          type="button"
+          id="password-addon"
+          onclick="password_toggle()"
+        >
+          {% icon "eye" %}
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-row items-center font-size-15 mb-4">
+      <input type="checkbox" class="rounded mr-2" id="remember-check" />
+      <label class="" for="remember-check"> Remember me </label>
+    </div>
+
+    <div class="mb-3">
+      <button class="w-full bg-primary text-white rounded-lg p-2" type="submit">
+        Log In
+      </button>
+    </div>
+  </form>
+</div>
+
+{% block javascript %}
+<script src="{% static 'js/auth_password_toggle.js' %}"></script>
+{% endblock javascript %} {% endblock loginspace %}

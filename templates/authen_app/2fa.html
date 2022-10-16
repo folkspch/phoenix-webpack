@@ -1,0 +1,36 @@
+<!-- prettier-ignore -->
+{% extends 'authen_base.html' %} 
+{% load webpack_loader static %}
+{% load icon %} 
+{% block title %}2FA Page{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/twostep.css' %}" />
+{% endblock css %} {% block loginspace %}
+
+<div class="flex flex-col items-center justify-center w-full gap-4">
+  <div
+    class="w-[64px] h-[64px] rounded-[50%] bg-primary text-white flex items-center justify-center"
+  >
+    {% icon "mail" %}
+  </div>
+  <h1 class="text-xl font-bold tracking-wide">Verify your email</h1>
+  <p class="mb-5 tracking-wide text-center">
+    Please enter the 8 digit code sent to
+    <span class="font-bold tracking-wide">example@abc.com</span>
+  </p>
+
+  <div class="mb-3 w-full">
+    <form action="login.html">
+      <input
+        type="text"
+        class="form-control text-center h-[40px] rounded w-full mb-4"
+        id="2fa_input"
+      />
+      <button class="w-full bg-primary text-white rounded p-2" type="submit">
+        Confirm
+      </button>
+    </form>
+  </div>
+</div>
+
+{% block javascript %} {% endblock javascript %} {% endblock loginspace %}

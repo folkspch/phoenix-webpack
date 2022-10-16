@@ -1,0 +1,315 @@
+{% load webpack_loader static %}
+{% load icon %}
+
+<nav class="w-full bg-white h-full flex-col flex text-black text-base items-start gap-4 pt-10 pl-6">
+  <h1 class="test-xl">Main</h1>
+  <div class="pl-2">
+   <div class="inline-flex gap-3">    
+    {% icon "home" height="20" width="20" %} 
+    <button class="dropdown-btn font-medium">
+      Dashboard
+      <div class="first-line:down-arrow fa fa-caret-down"></div>
+    </button>
+  </div>
+    <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#homepage"
+        >
+          <span class="select-none">Daily Overview</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Incidents</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">LTV Monitor</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h1 class="test-xl">Apps</h1>
+
+
+  <div class="pl-2">
+   <div class="inline-flex gap-3">    
+    {% icon "users" height="20" width="20" %} 
+    <button class="dropdown-btn font-medium">
+      Users
+      <div class="first-line:down-arrow fa fa-caret-down"></div>
+    </button>
+  </div>
+    <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#homepage"
+        >
+          <span class="select-none">User Overview</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Pending Directory</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Active Directory</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">e-KTC</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Institute</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pl-2">
+    <div class="inline-flex gap-3">    
+     {% icon "users" height="20" width="20" %} 
+     <button class="dropdown-btn font-medium">
+       Loan
+       <div class="first-line:down-arrow fa fa-caret-down"></div>
+     </button>
+   </div>
+     <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#homepage"
+        >
+          <span class="select-none">Loan Overview</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Requests List</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Waiting List</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Matching List</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Outstanding List</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Watching List</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">History List</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pl-2">
+    <div class="inline-flex gap-3">    
+     {% icon "users" height="20" width="20" %} 
+     <button class="dropdown-btn font-medium">
+       Data
+       <div class="first-line:down-arrow fa fa-caret-down"></div>
+     </button>
+   </div>
+     <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#homepage"
+        >
+          <span class="select-none">Interest</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">NFT Groups</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Lenders Preferences</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Matching Logs</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">User Funnel Report</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Incentive \& Fee</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">BOT Reports</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">Statistic (Table)</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pl-2">
+    <div class="inline-flex gap-3">    
+     {% icon "users" height="20" width="20" %} 
+     <button class="dropdown-btn font-medium">
+       Test
+       <div class="first-line:down-arrow fa fa-caret-down"></div>
+     </button>
+   </div>
+     <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#homepage"
+        >
+          <span class="select-none">Calculation algorithm</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">V3 Matching algorithm</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">V2 Matching algorithm</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex items-center rounded py-3 pl-3 pr-4 hover:bg-gray-600"
+          href="#link1"
+        >
+          <span class="select-none">V1 Matching algorithm</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pl-2">
+    <div class="inline-flex gap-3">    
+     {% icon "users" height="20" width="20" %} 
+     <button class="dropdown-btn font-medium">
+       PhoenixV2
+       <div class="first-line:down-arrow fa fa-caret-down"></div>
+     </button>
+   </div>
+     <ul class="dropdown-content text-sm font-medium hidden pl-4 pt-1">
+    </ul>
+  </div>
+
+
+</ul>
+
+
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var dropdownContent = document.getElementsByClassName("dropdown-content");
+
+  for (i = 0; i < dropdown.length; i++) {
+    let current = dropdown[i]
+    let currentContent = dropdownContent[i]
+    let text = dropdown[i].innerText
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      if (currentContent.style.display === "block") {
+        currentContent.style.display = "none";
+        current.innerHTML = text + "<div class=\"up-arrow fa fa-caret-down\"></div>"
+      } else {
+        currentContent.style.display = "block";
+        current.innerHTML = text + "<div class=\"up-arrow fa fa-caret-up\"></div>"
+      }
+    });
+  }
+</script>

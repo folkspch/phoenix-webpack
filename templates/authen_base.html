@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block css %}{% endblock css %}
+{% block title %}{% endblock title %}
+{% block content %}
+
+<div class="min-h-screen antialiased flex md:flex-row flex-col">
+  <div class="min-h-screen 2xl:basis-3/12 lg:basis-4/12 md:basis-5/12 basis-full bg-white p-5 sm:p-12 flex flex-col items-center justify-between">
+    <div>
+      <a href="login.html">
+        <img src="{% static 'logo.png' %}" alt="My image" />
+      </a>
+    </div>
+
+    {% block loginspace %}{% endblock loginspace %}
+    <div>
+      <p class="mb-0 mt-3 text-secondary">
+        <small>©2020-2022 NestiFly Company Limited </small>
+      </p>
+    </div>
+  </div>
+  <div class="2xl:basis-9/12 lg:basis-8/12 md:basis-7/12 basis-full z-40 md:h-screen bg-center bg-cover bg-no-repeat bg-[url('/static/stockpic.jpg')]">
+    <div class="bg-gradient-to-b from-[#2b3940] to-[#000000] h-full w-full opacity-60"></div>
+  </div>
+</div>
+{% endblock content %}
+{% block javascript %}
+{% endblock javascript %}

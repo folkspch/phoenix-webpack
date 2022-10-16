@@ -1,0 +1,46 @@
+{% load icon %}
+
+<nav class="h-12 px-10 mt-4 inline-flex flex-row items-center gap-4">
+
+    <div class="inline-flex items-center gap-4">
+
+   
+        {% icon "home" height="14" width="14" %}
+  
+    {% icon "chevron-right" height="14" width="14" %}
+
+    </div>
+    
+    {% if subLevel1 %}
+    <div class="inline-flex items-center gap-4">
+        <a href={{urlPage}}>{{page}}</a>
+        {% icon "chevron-right" height="14" width="14" %}
+    </div>
+    {% endif %}
+
+    {% if subLevel2 %}
+    <div class="inline-flex items-center gap-4">
+        <a href={{urlSubLevel1}} >{{subLevel1}}</a>
+        {% icon "chevron-right" height="14" width="14" %}
+    </div>
+    {% endif %}
+
+    {% if subLevel3 %}
+    <div class="inline-flex items-center gap-4">
+        <a href={{urlSubLevel2}}>{{subLevel2}}</a>
+        {% icon "chevron-right" height="14" width="14" %}
+    </div>
+    {% endif %}
+
+    {% if subLevel4 %}
+    <div class="inline-flex items-center gap-4">
+        <a href={{urlSubLevel3}}>{{subLevel3}}</a>
+        {% icon "chevron-right" height="14" width="14" %}
+    </div>
+    {% endif %}
+
+    <div class="inline-flex items-center gap-4">
+        <a href={% firstof urlSubLevel4 urlSubLevel3 urlSubLevel2 urlSubLevel1 urlPage %} class="text-primary">{% firstof subLevel4 subLevel3 subLevel2 subLevel1 page %}</a>
+    </div>
+  
+</nav>

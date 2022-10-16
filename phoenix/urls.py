@@ -25,7 +25,7 @@ urlpatterns = [
          name='index'
          ),
     path('authen/',include('phoenix.authen_app.urls')),
-    path('user/',include('phoenix.user_app.urls')),
-    path('dashboard/',include('phoenix.dashboard_app.urls')),
-    path('loan/',include('phoenix.loan_app.urls')),
+    path('phoenix/user/',include('phoenix.user_app.urls')),
+    path('phoenix/dashboard/',include('phoenix.dashboard_app.urls')),
+    path('phoenix/loan/',include('phoenix.loan_app.urls')),
 ]

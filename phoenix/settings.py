@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     #3rd party
     
     'webpack_boilerplate',
+     'django_feather',
 ]
 
 MIDDLEWARE = [

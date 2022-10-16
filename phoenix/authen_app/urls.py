@@ -2,5 +2,6 @@ from django.urls import path
 from phoenix.authen_app import views
 
 urlpatterns = [
-    path('',views.authen,name='authen'),
+    path('login/',views.login,name='login'),
+    path('2fa/',views.twofa,name='2fa'),
 ]
