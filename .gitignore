@@ -15,3 +15,4 @@ yarn.lock
 .idea
 penv
 p310
+.pyc
