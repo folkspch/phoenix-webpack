@@ -47,7 +47,7 @@ tailwind/static
 can use in template with
 
 `{% load static %}`
-`<img src="{% static 'static/images/webpack.png' %}"/>`
+`<img src="{% static 'images/webpack.png' %}"/>`
 
 
 ## Available Scripts

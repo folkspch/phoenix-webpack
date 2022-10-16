@@ -18,7 +18,6 @@ module.exports = {
   output: {
     path: Path.join(__dirname, "../build"),
     filename: "js/[name].js",
-    publicPath: "/static/",
     assetModuleFilename: "[path][name][ext]",
   },
   optimization: {
@@ -32,7 +31,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: Path.resolve(__dirname, "../static"), to: "static" },
+        { from: Path.resolve(__dirname, "../static"), to: "" },
       ],
     }),
     new WebpackAssetsManifest({
