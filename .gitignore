@@ -16,4 +16,6 @@ yarn.lock
 penv
 p310
 __pycache__/
+migrations/__pycache__/
 *.pyc
+migrations
