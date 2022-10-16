@@ -15,5 +15,5 @@ yarn.lock
 .idea
 penv
 p310
-__pycache__
+__pycache__/
 *.pyc
