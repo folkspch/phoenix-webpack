@@ -32,7 +32,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: Path.resolve(__dirname, "../vendors"), to: "vendors" },
+        { from: Path.resolve(__dirname, "../static"), to: "static" },
       ],
     }),
     new WebpackAssetsManifest({

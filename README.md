@@ -40,6 +40,16 @@ cd tailwind
 npm run start
 ```
 
+## Static file
+
+Static file is store in 
+tailwind/static
+can use in template with
+
+`{% load webpack_loader static %}`
+`<img src="{% static 'static/images/webpack.png' %}"/>`
+
+
 ## Available Scripts
 
 In the project directory, you can run:

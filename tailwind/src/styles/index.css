@@ -4,7 +4,7 @@
 
 .jumbotron {
   // should be relative path of the entry scss file
-  background-image: url("../../vendors/images/sample.jpg");
+  background-image: url("../../static/images/sample.jpg");
   background-size: cover;
 }
 
